@@ -1,7 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import Tour
+# Create your views here.
 
 def index(request):
-    return HttpResponse('ok it working')
-
-# Create your views here.
+    tours = Tour.objects.all()
+    contexts = {
+        'tours': tours
+    }
+    return render(request, 'tours/index.html', contexts)
