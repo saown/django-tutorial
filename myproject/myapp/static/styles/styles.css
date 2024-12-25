@@ -1,13 +1,75 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
-    text-align: center;
+    margin: 0;
     padding: 20px;
+    overflow: hidden;
 }
-
 img{
     width: 300px;
     height: auto;
-    background-color: black;
+    background: black;
+    margin-bottom: 10px;
+    display: block;
+}
+button{
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #357ab8;
+}
+
+/* home page */
+.centered-content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    font-size: 16px;
+    outline: none;
+}
+
+/* form styling */
+
+form{
+    max-width: 400px;
+    margin: 0;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 4p 8px rgb(0,0,0,0.1);
+    padding: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+/* success page styling */
+.success-message{
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0,0.1);
+    padding: 20px;
+}
+.success-message p{
+    margin: 20px 0;
 }
